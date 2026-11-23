@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050b14;
+  --foreground: #f8fafc;
+  --surface-navy: #0b1221;
+  --surface-card: #0f172a;
+  --border-subtle: #1e293b;
+  --border-glow: rgba(0, 240, 255, 0.25);
+  --electric-blue: #0062ff;
+  --neon-cyan: #00f0ff;
+  --text-muted: #94a3b8;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface-navy: var(--surface-navy);
+  --color-surface-card: var(--surface-card);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-glow: var(--border-glow);
+  --color-electric-blue: var(--electric-blue);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-text-muted: var(--text-muted);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  background-color: #050b14;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050b14;
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Glassmorphism primitives */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 240, 255, 0.22);
+  box-shadow: 0 0 30px -8px rgba(0, 240, 255, 0.12);
+}
+
+.glass-panel-glow:hover {
+  border-color: rgba(0, 240, 255, 0.45);
+  box-shadow: 0 0 35px -5px rgba(0, 240, 255, 0.22);
+}
+
+/* Typography gradients */
+.gradient-heading {
+  background: linear-gradient(135deg, #ffffff 15%, #cbd5e1 55%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-cyan {
+  background: linear-gradient(135deg, #0062ff 0%, #00f0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Telecom Grid Background pattern */
+.telecom-grid {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(0, 240, 255, 0.08) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+.telecom-radial-glow {
+  background: radial-gradient(circle at 50% -10%, rgba(0, 98, 255, 0.18) 0%, rgba(0, 240, 255, 0.06) 35%, transparent 70%);
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #ffffff;
 }

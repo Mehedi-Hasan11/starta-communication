@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="startaGradBlue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0062FF" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Symbol: Dynamic S-Wave -->
+  <g transform="translate(10, 6)">
+    <!-- Subtle glow under-layer -->
+    <path d="M 28,88 C 8,66 14,28 46,18 C 72,10 84,34 60,54 C 34,74 46,96 74,90 C 88,86 92,72 92,72"
+          fill="none" stroke="url(#startaGradBlue)" stroke-width="16" stroke-linecap="round" opacity="0.2" />
+    <!-- Primary flow vector -->
+    <path d="M 28,88 C 8,66 14,28 46,18 C 72,10 84,34 60,54 C 34,74 46,96 74,90 C 88,86 92,72 92,72"
+          fill="none" stroke="url(#startaGradBlue)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Carrier Nodes -->
+    <circle cx="28" cy="88" r="4.5" fill="#0062FF" />
+    <circle cx="53" cy="54" r="3" fill="#00F0FF" />
+    <circle cx="92" cy="72" r="4.5" fill="#00F0FF" />
+  </g>
+
+  <!-- Typography Lockup -->
+  <text x="140" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="7" fill="#F8FAFC">
+    STARTA
+  </text>
+  <text x="142" y="91" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="4.5" fill="#38BDF8">
+    COMMUNICATION LTD
+  </text>
+  <circle cx="410" cy="87.5" r="2.5" fill="#00F0FF" />
+</svg>

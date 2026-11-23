@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" width="100%" height="180">
+  <defs>
+    <linearGradient id="v1DarkGradBlue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0062FF" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="760" height="180" rx="12" fill="#050B14" />
+  
+  <!-- Ambient Telecom Grid Indicator -->
+  <g opacity="0.08" stroke="#00F0FF" stroke-width="0.75">
+    <line x1="40" y1="90" x2="720" y2="90" stroke-dasharray="3 6" />
+    <circle cx="110" cy="90" r="60" fill="none" />
+  </g>
+
+  <!-- Symbol: Infinity Orbit S -->
+  <g transform="translate(60, 30)">
+    <path d="M 30,105 C 5,75 15,28 52,18 C 82,10 94,40 68,62 C 42,84 56,110 88,102 C 104,98 108,82 108,82"
+          fill="none" stroke="url(#v1DarkGradBlue)" stroke-width="18" stroke-linecap="round" opacity="0.15" />
+    
+    <path d="M 28,102 C 6,76 14,32 50,20 C 78,10 92,38 66,62 C 38,84 52,110 84,102 C 100,98 105,82 105,82"
+          fill="none" stroke="url(#v1DarkGradBlue)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <circle cx="28" cy="102" r="5" fill="#0062FF" />
+    <circle cx="58" cy="62" r="3.5" fill="#00F0FF" />
+    <circle cx="105" cy="82" r="5" fill="#00F0FF" />
+  </g>
+
+  <!-- Typography Lockup -->
+  <text x="210" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="7" fill="#F8FAFC">
+    STARTA
+  </text>
+  
+  <text x="212" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="4.8" fill="#38BDF8">
+    COMMUNICATION LTD
+  </text>
+  
+  <circle cx="492" cy="118" r="2.5" fill="#00F0FF" />
+</svg>

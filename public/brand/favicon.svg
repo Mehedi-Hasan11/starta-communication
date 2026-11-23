@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0062FF" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+  </defs>
+  <!-- Background Badge for High Contrast at 16/32px -->
+  <rect width="32" height="32" rx="7" fill="#050B14" />
+  <!-- Wave Path -->
+  <path d="M 8,24 C 2,18 4,8 14,5 C 21,3 24,9 18,15 C 11,21 15,27 23,25 C 27,24 28,20 28,20" 
+        stroke="url(#favGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="8" cy="24" r="1.5" fill="#0062FF" />
+  <circle cx="28" cy="20" r="1.5" fill="#00F0FF" />
+</svg>
