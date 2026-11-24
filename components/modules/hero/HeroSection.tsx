@@ -84,7 +84,7 @@ export function HeroSection() {
 
           {/* Right Column: 3D Visual Network (5 cols) */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
-            <div className="relative w-full max-w-[500px]">
+            <div className="relative w-full max-w-[440px]">
               {/* Outer Cyan Ring Glow Effect */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#0062ff]/15 to-[#00f0ff]/15 blur-2xl pointer-events-none" />
               <HeroGlobeWrapper />
